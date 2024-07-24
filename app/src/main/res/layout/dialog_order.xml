@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:backgroundTint="#F8E7C4"
+    app:cardMaxElevation="12dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/pizza_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza Name"
+            android:fontFamily="serif"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/size_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="Select Size:"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spinner_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="Quantity:"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/order_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:text="1"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/base_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="Price Per Pizza: $0.00"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/final_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="serif"
+            android:text="Final Price: $0.00"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_submit_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D8A82D"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

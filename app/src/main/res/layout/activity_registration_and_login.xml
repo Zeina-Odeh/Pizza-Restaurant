@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#ECD39F"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/loginPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A57628"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Login Page"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginPageTitle"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableEnd="@drawable/person"
+        android:fontFamily="serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="22dp" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailInput"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableEnd="@drawable/lock"
+        android:fontFamily="serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="22dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_rememberMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:textSize="7pt"
+        android:fontFamily="serif"
+        android:text="Remember Email" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordInput"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="#D8A82D"
+        android:fontFamily="serif"
+        android:padding="14dp"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFF"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/signUpPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Don't have an account yet?"
+        android:textSize="8pt" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpPrompt"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="#D8A82D"
+        android:fontFamily="serif"
+        android:padding="14dp"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF"
+        android:textSize="9pt" />
+</RelativeLayout>

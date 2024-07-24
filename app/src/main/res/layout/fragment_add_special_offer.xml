@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECD39F"
+    tools:context=".ui.home.addspecialoffer.AddSpecialOfferFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Spinner
+                android:id="@+id/spinnerPizzaType"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="12dp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textColorHint="#939090"/>
+
+            <Spinner
+                android:id="@+id/spinnerPizzaSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="12dp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textColorHint="#939090"/>
+
+            <TextView
+                android:id="@+id/textViewCalculatedPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="serif"
+                android:text="Calculated Price: $0.00"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonStartDateTime"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4pt"
+                android:layout_marginTop="10pt"
+                android:backgroundTint="#AF8F3D"
+                android:fontFamily="serif"
+                android:text="Select Start Date and Time for the Offer"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/textViewStartDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Start Date and Time: Not selected"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/buttonEndDateTime"
+                android:layout_width="360dp"
+                android:layout_marginHorizontal="4pt"
+                android:backgroundTint="#AF8F3D"
+                android:fontFamily="serif"
+                android:textSize="7pt"
+                android:layout_height="wrap_content"
+                android:text="Select End Date and Time for the Offer" />
+
+            <TextView
+                android:id="@+id/textViewEndDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="End Date and Time: Not selected"
+                android:padding="8dp" />
+
+
+            <EditText
+                android:id="@+id/editTextOfferDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Offer Discount"
+                android:background="@drawable/edit_text_border"
+                android:padding="12dp"
+                android:fontFamily="serif"
+                android:textColorHint="#939090"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Final Price"
+                android:fontFamily="serif"
+                android:background="@drawable/edit_text_border"
+                android:padding="12dp"
+                android:textColorHint="#939090"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+
+            <Button
+                android:id="@+id/buttonAddSpecialOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Add Special Offer"
+                android:textSize="9pt"
+                android:fontFamily="serif"
+                android:backgroundTint="#D8A82D" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AdvancePizza_1190083_1190113</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pizza_name">Pizza Name: %1$s</string>
+    <string name="pizza_size">Pizza Size: %1$s</string>
+    <string name="pizza_quantity">Number of Pizza to Order: %1$d</string>
+    <string name="pizza_base_price">Price/Pizza: %1$.2f</string>
+    <string name="pizza_final_price">Final Price: %1$.2f</string>
+</resources>

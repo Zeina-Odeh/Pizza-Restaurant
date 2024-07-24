@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/nav_profile_admin">
+
+    <fragment
+        android:id="@+id/nav_profile_admin"
+        android:name="com.example.advancepizza_1190083_1190113.ui.home.profile.ProfileFragment"
+        android:label="Admin Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_add_admin"
+        android:name="com.example.advancepizza_1190083_1190113.ui.home.addadmin.AddAdminFragment"
+        android:label="Add Admin"
+        tools:layout="@layout/fragment_add_admin" />
+
+    <fragment
+        android:id="@+id/nav_view_orders"
+        android:name="com.example.advancepizza_1190083_1190113.ui.home.vieworders.ViewAllOrdersFragment"
+        android:label="View Orders"
+        tools:layout="@layout/fragment_view_all_orders">
+
+    <action
+        android:id="@+id/action_viewAllOrdersFragment_to_ordersSummaryFragment"
+        app:destination="@id/ordersSummaryFragment" />
+
+        <action
+            android:id="@+id/action_viewAllOrdersFragment_to_incomeSummaryFragment"
+            app:destination="@id/incomeSummaryFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ordersSummaryFragment"
+        android:name="com.example.advancepizza_1190083_1190113.ui.home.orders.OrdersSummaryFragment"
+        android:label="Orders Summary"
+        tools:layout="@layout/fragment_orders_summary" />
+
+    <fragment
+        android:id="@+id/incomeSummaryFragment"
+        android:name="com.example.advancepizza_1190083_1190113.ui.home.income.IncomeSummaryFragment"
+        android:label="Income Summary"
+        tools:layout="@layout/fragment_income_summary" />
+
+    <fragment
+        android:id="@+id/nav_add_offers"
+        android:name="com.example.advancepizza_1190083_1190113.ui.home.addspecialoffer.AddSpecialOfferFragment"
+        android:label="Add Special Offers"
+        tools:layout="@layout/fragment_add_special_offer" />
+
+    <fragment
+        android:id="@+id/nav_logout_admin"
+        android:name="com.example.advancepizza_1190083_1190113.ui.home.logout.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
