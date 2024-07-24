@@ -15,7 +15,7 @@ An Android app for a pizza restaurant allowing users to order pizza online or vi
 - **Get Started Button:** Connects to a server using REST to load pizza types.
   - **Success:** Redirects to login and registration.
   - **Failure:** Shows an error message.
-- **Pizza Types URL:** [Pizza Types]([https://androidproject.free.beeceptor.com/pizza1])
+- **Pizza Types URL:** [Pizza Types](https://androidproject.free.beeceptor.com/pizza1)
 
 ### 2. Login and Registration
 - **Login:** Redirects to the login page.
